@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+      <meta content="utf-8" http-equiv="encoding">
+   
+    <link rel="stylesheet" href="registration.css" >   
+    
+    <script src="registration.js"> </script>
+    </head>
+    <body>
+     
+    <form method="post" name="registration" action="registform.html" onsubmit="return validateform()">
+      <div class="div-container">
+      <table>
+      <tr>
+     <td>
+       FIRST-NAME  :<input type="text" name="fname" value=" "  class="label"> 
+       <span id="nameloc"></span>
+       LAST-NAME  :<input type="text" name="lname" value=" " class="label" >
+       <span id="nameloc"></span>
+    </td>
+     </tr>
+      <tr>
+       <td> FATHER'S-NAME  :<input type="text" name="faname" value=" " class="label">
+      
+        FATHER'S OCCUPATION  :<input type="text" name="occupation" value=" " class="label">
+      </td>
+        </tr>
+
+       
+
+         <tr>
+        <td> MOTHER'S-NAME  :<input type="text" name="moname" value=" " class="label" class="abc">
+          MOTHER'S OCCUPATION :
+          :<input type="text" name="occupation" value=" " class="label" class="abc"> 
+        </td>
+       </tr>
+
+       
+      
+         <tr>
+          <td>
+            ADHAR-CARD NO. :<input type="text-number" name="adharcard" value=" " class="label" minlength="12" >
+            
+            PIN-CODE NO. :<input type="String" name="pincode" value=" " class="label" minlength="6" > </td>
+           
+        </tr>
+            <tr>
+           <td> NATIONALITY :<input type="text" name="nationality" value=" " class="label" > </td>
+          </tr>
+          <tr>
+            <td>MOBILE-NO. :
+              <input type="text" name="mobile" value=" " class="label" minlength="10" >
+            </td>
+            </tr>
+             <tr>
+              <td> DATE-OF-BIRTH  :<input type="date" name="dob" value=" " class="label" >
+              
+                Email-Id  :<input type="string" name="email" value=" " class="label" >
+        
+              </td>
+               </tr>
+
+              
+
+                <tr>
+               <td> GENDER  :
+                MALE<input type="radio" name="gender" value=" MALE" >
+                FEMALE<input type="radio" name="gender" value="FEMALE" >
+                OTHERS<input type="radio" name="gender" value=" OTHER" >
+            </td>
+              </tr>
+              <tr>
+
+                <td>GENDER :
+                    <select>
+                        
+                    <option>Select Option</option> 
+                    <option>Male</option> 
+                    <option>Female</option> 
+                    <option>other</option> 
+                    
+                    
+                    </select>
+                </td>
+                </tr>
+               
+         
+       <tr>
+         <th> PERMANENT-ADDRESS:</th>
+       </tr>
+       <tr>
+        <td>LOCAL-ADDRESS<input type="text" name="permanentadd" value=" " class="address"  > </td>
+        </tr>
+         <tr>
+           <td>STATE:
+           <select class="option-menu">
+            <option>select State</option><option>Andra pradesh</option>
+            <option>Andra pradesh</option><option>Andra pradesh</option>
+            <option>select State</option> <option>Andra pradesh</option>
+            <option>select State</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            
+           </select>
+           
+
+           DISTRICT:
+            <select class="option-menu">
+              <option>select State</option><option>Andra pradesh</option>
+              <option>Andra pradesh</option><option>Andra pradesh</option>
+              <option>select State</option> <option>Andra pradesh</option>
+              <option>select State</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+             
+            </select>
+           </td> 
+
+
+         </tr> 
+        <tr>
+          <th>
+            CURRENT-ADDRESS:
+          </th>
+        </tr>
+        <tr>
+         <td> LOCAL-ADDRESS:<input type="text" name="currentadd" value=" " class="address" > </td>
+         </tr>
+         <tr>
+          <td>STATE:
+          <select class="option-menu">
+            <option>select State</option><option>Andra pradesh</option>
+            <option>Andra pradesh</option><option>Andra pradesh</option>
+            <option>select State</option> <option>Andra pradesh</option>
+            <option>select State</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+            <option>Andra pradesh</option> <option>select State</option>
+           
+          </select>
+          
+          DISTRICT:
+            <select class="option-menu">
+              <option>select District</option><option>Andra pradesh</option>
+              <option>Andra pradesh</option><option>Andra pradesh</option>
+              <option>select State</option> <option>Andra pradesh</option>
+              <option>select State</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+              <option>Andra pradesh</option> <option>select State</option>
+             
+            </select>
+            </td>
+        </tr>
+      </table>
+      </div>
+
+
+
+        <div class="btn">
+                          
+          <a href=" #"><input type="button" value="NEXT" class="sub-btn" ></a>
+          
+           </div>
+         
+
+
+                 <div class="div-container" >
+                   <table>
+                    <tr>
+                   <th> EDUCATIONAL DETAILS:</th></tr>
+                   <tr>
+                     <td>HIGHEST EDUCATION :
+                       <select class="option-menu">
+                       <option class="edu-option">Select Option</option>
+                       <option class="edu-option">10th</option>
+                       <option class="edu-option">12th</option>
+                       <option class="edu-option">Graduation</option>
+                       <option class="edu-option">Post-Graduation</option>
+                       <option class="edu-option">Ph.d</option>
+                       <option class="edu-option">Other</option>
+                     </select>
+                
+                  </tr>
+                  <tr>
+                  <th>Class 10th Details:</th>
+                  </tr>
+                  <tr>
+                   <td> School Name : <input type="text" name="schoolname" value=" " class="label"> 
+                   </tr>
+                   <tr>
+                    <th>SUBJECTS</th></tr>
+                   <tr>
+                     <td> 
+
+                    Hindi<input type="checkbox" name="subject" value=" " class="checkbox" class="abc">
+                    English<input type="checkbox" name="subject" value=" " class="checkbox" class="abc">
+                    Sanskrit<input type="checkbox" name="subject" value=" " class="checkbox" class="abc">
+                    Sanskrit<input type="checkbox" name="subject" value=" " class="checkbox" class="abc">
+                    Mathmatics<input type="checkbox" name="subject" value=" " class="checkbox" class="abc">
+                    Science<input type="checkbox" name="subject" value=" " class="checkbox" class="abc">
+                    Social-Science<input type="checkbox" name="subject" value=" "  class="checkbox"class="abc">
+                    Other<input type="checkbox" name="subject" value=" " class="checkbox" class="abc">
+                    Others: <input type="text" name="subject" value=" " class="checkbox" class="abc">
+                  </td>
+                   </tr>
+                    
+                   <tr>
+                     <th>Class 12th Details</th>
+                   </tr>
+                   <tr>
+                     <th>College Name:<input type="text" name="collegename" value="" class="label">
+                    </th>
+                   </tr>
+
+                    <tr>
+                      <td>12th Stream:
+                      <select class="option-menu">
+                        <option class="inter-option">Select Option</option>
+                        <option class="inter-option">Science</option>
+                        <option class="inter-option">Commerce</option>
+                        <option class="inter-option">Arts</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                    <td> Compulsory-Subjects:<input type="text" name="subjects" value=" " class="label"> </td>
+                    </tr>
+
+                   
+                    <tr>
+                      <th>Graduation Details</th>
+                    </tr>
+                    <tr>
+         <th>University Name:<input type="text" name="universityname" value=" " class="label" >
+                     </th>
+                    </tr>
+                    <tr>
+                      <th>College Name:<input type="text" name="collegename" value=" " class="label" >
+                     </th>
+                    </tr>
+ 
+                     <tr>
+                       <td>Graduation :
+                       <select class="option-menu">
+                         <option class="Grad-option">Select Option</option>
+                         <option class="Grad-option">B.A.</option>
+                         <option class="Grad-option">B.Com</option>
+                         <option class="Grad-option">B.Sc</option>
+                         <option class="Grad-option">B.Tech/B.E</option>
+                         <option class="Grad-option">BBA</option>
+                         <option class="Grad-option">Other</option>
+                         </select>
+                       </td>
+                     </tr>
+
+                    
+
+                     <tr>
+                      <th>Post-Graduation Details</th>
+                    </tr>
+                    <tr>
+         <th>University Name:<input type="text" name="universityname" value=" " class="label">
+                     </th>
+                    </tr>
+                    <tr>
+                      <th>College Name:<input type="text" name="collegename" value=" " class="label">
+                     </th>
+                    </tr>
+ 
+                     <tr>
+                       <td>Post Graduation :
+                       <select  class="option-menu">
+                         <option class="PG-option">Select Option</option>
+                         <option class="PG-option">M.A.</option>
+                         <option class="PG-option">M.Com</option>
+                         <option class="PG-option">M.Sc</option>
+                         <option class="PG-option">M.Tech/M.E</option>
+                         <option class="PG-option">MBA</option>
+                         <option class="PG-option">Other</option>
+                         </select>
+                       </td>
+                     </tr>
+
+
+                      <tr>
+                        <th>Uploads Documents</th>
+                      </tr>
+                      <tr>
+                        <td> Candidates Photo:<input type="file" name="firstname"  accept="image/png, image/jpeg" > </td>
+                       </tr>
+                      
+                      <tr>
+                    <td> 10th certificate:<input type="file" name="firstname" value="" > </td>
+                      </tr>
+                       <tr>
+                      <td> 12th marksheet:<input type="file" name="firstname" value=" " > </td>
+                     </tr>
+                     <tr>
+                       <td> AdharCard :<input type="file" name="firstname" value=" "> </td>
+                       </tr>
+                        <tr>
+                        <td> VoterId Card:<input type="file" name="firstname" value=" "> </td>
+                        </tr>
+                        <tr>
+                         <td> Income certificate:<input type="file" name="firstname" value=" " > </td>
+                          </tr>
+                           <tr>
+                          <td> Caste certificate:<input type="file" name="firstname" value=" "> </td>
+                         </tr>
+
+                         <tr>
+                          <td> Residential certificate:<input type="file" name="firstname" value=" " > </td>
+                         </tr>
+                         <tr>
+                          <td> Candidates Signature:<input type="file" name="firstname" value=" "> </td>
+                         </tr>
+
+                      <tr>
+                        <td><input type="checkbox" value="" > I agree all terms and privacy condition
+                        </td>
+                        </tr>
+                        </table>
+                      </div>
+                        <div class="btn">
+                          
+                        <input type="submit" value="SUBMIT" class="sub-btn" >
+                        
+                         </div>
+                      </form>
+                    
+      
+
+
+
+    </body>
+</html>

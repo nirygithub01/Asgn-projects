@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+      <meta content="utf-8" http-equiv="encoding">
+   <link rel="scriptsheet" href="registration.js">
+    <link rel="stylesheet" href="pancard.css" >   
+    
+    <script>
+   function validateform() 
+   {
+     const email=document.registration.email.value;
+     const atposition=email.indexOf('@');
+     const dotposition=email.lastindexOf(".");
+
+     if(atposition < 1 || dotposition < atposition + 2 || dotposition + 2 > email.length){
+       document.getElementById("emailloc").innerHTML="Enter valid Email-Id";
+       return false
+     }
+   }
+
+
+    </script>
+    </head>
+    <body>
+
+      
+      
+        <center>
+        <h2 class="head">Request For New PAN Card Or/And Changes Or Correction in PAN Data</h2>
+        <h4 class="head"><i>Fields marked with* (asterisk) are mandatory. To avoid mistake(s). please refer guidlines and instructions</i></h4>
+      </center>
+      
+
+  
+  <form method="post" name="registration" action="registform.html" onsubmit="return validateform()">
+    <div class="div-container">
+      
+     
+      <table>
+
+         <!-- Check Candidates Nationality-->
+          <tr>
+             <td><input type="checkbox" value=""></td> <th>*Whether citizen of India    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            
+                  Yes  <input type="radio" name="citizen" value=" Yes">&emsp;&emsp;&emsp;
+                  No  <input type="radio" name="citizen" value="No">
+               </th>
+                </tr>
+
+                <!--Candidates Name Title-->
+      <tr>
+        <td><input type="checkbox" value=""></td><th> 
+       *1 NAME  :  &emsp;&emsp;&emsp;&emsp;
+       <input type="text" name="fname" value=" "  class="label" >
+       </th>
+       </tr>
+       <tr>
+        <td><input type="checkbox" value=""></td> <th>Title     &emsp;&emsp;&emsp;&emsp;
+       Shree/Mr <input type="radio" name="title" value="Shree/Mr">  &emsp;&emsp;
+       Smt/Mrs <input type="radio" name="title" value=" Smt/Mrs">    &emsp;&emsp;
+       Kumari/Ms  <input type="radio" name="title" value="  Kumari/Ms">   &emsp;&emsp;
+       M/s  <input type="radio" name="title" value=" M/s">
+    </th> 
+       </tr>
+
+       <!--Candidates Name-->
+       <tr>
+        <td><input type="checkbox" value=""></td><th>
+         <div class="div-name">
+         <div>
+       LAST NAME/SureName <br>
+        <input type="text" name="lname" value=" " class="label" placeholder="Last Name">
+       </div>
+       <div>
+       First Name <br>
+        <input type="text" name="fname" value=" " class="label" placeholder="First Name">
+       </div>
+       <div>
+       Middle Name  <br>
+       <input type="text" name="middlename" value=" " class="label" placeholder="Middle Name">
+      </div>
+      </div>
+    </th>
+     </tr>
+ <!--Candidates Prefix-->
+     <tr>
+      <td><input type="checkbox" value=""></td><th>
+             * Name as you would like it printed on the card <h4>(Prefix like Shri,Smt,Kumari,Late,Dr.,CA,Ms.,Mr.,Mrs.,M/s,Alias etc are not allowed )
+         
+         </h4>
+           </th>
+     </tr>
+     
+     <!--Candidates Parent Details-->
+     <tr>
+      <td><input type="checkbox" value=""></td><th>
+             Whether Mother is single parent and you wish to apply for PAN by furnishing the name of your mother only 
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          Yes  <input type="radio" name="choice" value="Yes"> &emsp;&emsp;&emsp;&emsp;
+             No  <input type="radio" name="choice" value="No">
+         
+            </th>
+     </tr>
+     <!--Candidates Father's Details-->
+      <tr>
+        <td><input type="checkbox" value=""></td><th> 
+         FATHER'S NAME  <h5>(Mandatory field Even married women should give father's name only)</h5>
+          </th>
+        </tr>
+          <tr>
+            <td><input type="checkbox" value=""></td><th>
+             <div class="div-name">
+             <div>
+            Last Name/SureName 
+            <br><br> <input type="text" name="lastname" value=" " class="label" placeholder=" Last Name">
+            </div>
+            <div>
+            First Name 
+            <br><br> <input type="text" name="lastname" value=" " class="label" placeholder="First Name">
+            </div>
+            <div>
+            Middle Name 
+            <br><br> <input type="text" name="lastname" value=" " class="label" placeholder="Middle Name">
+             </div>
+             </div>
+           </th>
+        </tr>   
+        <td><input type="checkbox" value=""></td><th>
+
+        FATHER'S OCCUPATION  :<input type="text" name="occupation" value=" " class="label" >
+      </th>
+        </tr>
+        <!--Candidates Mother's Name-->
+ <tr>
+  <td><input type="checkbox" value=""></td> <th> MOTHER'S NAME <h4>(This field is Optional)</h4>  
+ </th>
+ </tr>
+          <tr>
+            <td><input type="checkbox" value=""></td> <th>
+          <div class="div-name">
+          <div>
+            Last Name/SureName 
+            <br><br> <input type="text" name="lastname" value=" " class="label" placeholder="Last Name">
+            </div>
+            <div>
+            First Name 
+            <br><br> <input type="" name="firstname" value=" " class="label" placeholder="First Name">
+            </div>
+            <div>
+            Middle Name 
+            <br><br> <input type="" name="lastname" value=" " class="label" placeholder="Middle Name">
+         </div>
+         </div>
+         </th>
+      </tr>
+           
+          <tr>
+            <td><input type="checkbox" value=""></td><th>
+              *4. Select Parent Name which is to be printed on the card
+           <h4>(In case no Optionj is provided then PAN card will be issued with father's name)
+           <br> &emsp;&emsp;&emsp;&emsp; 
+        Father  Name  <input type="radio" name="name" value="Father Name" required> 
+        &emsp;&emsp;&emsp;&emsp; 
+        Mother Name  <input type="radio" name="name " value="Mother Name" required>
+        </h4>
+      </th>
+    </tr>
+      <!--Candidates Date of Birth--> 
+   <tr>
+    <td><input type="checkbox" value=""></td> <th>
+  *5. Date of Birth/Incorporation/Agreement/Partnership
+      
+    or Trust Deed/Formation of Body of Individuals/ 
+    Association of Persons &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="date" name="dob" values="" class="label" required> 
+    </th>
+    </tr>    
+
+    <!--Candidates Gender-->
+    <tr>
+      <td><input type="checkbox" value=""></td>  <th> GENDER  : &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       MALE<input type="radio" name="gender" value=" MALE" >&emsp;&emsp;
+       FEMALE<input type="radio" name="gender" value="FEMALE" &emsp;&emsp;
+       OTHERS<input type="radio" name="gender" value=" OTHER">
+   </th>
+     </tr>
+
+  <tr>
+    <td><input type="checkbox" value=""></td><th>
+      MOTHER'S OCCUPATION :
+      :<input type="text" name="occupation" value=" " class="label" placeholder="Ocupation"> 
+     </th>
+   </tr>
+   
+   <!--Candidates Documentation Details-->
+   <tr>
+    <td><input type="checkbox" value=""></td> <th>
+     ADHAR-CARD NO.:<input type="text-number" name="adharcardnumber" value=" " class="label" minlength="12">
+     
+     <br>
+     NATIONALITY:<input type="text" name="nationality" value=" " class="label" placeholder="Nationality" >  
+    
+    </th>
+   <tr>
+    <td><input type="checkbox" value=""></td><th>
+  MOBILE-NO. :<input type="String" name="mobilenumber" value=" " class="label" minlength="10">       
+    Email-Id  :<input type="string" name="email" value=" " class="label" placeholder="Email-Id">
+      <span id="emailloc"></span>
+    </th>
+    </tr>
+  
+    <!--Candidate Photo and Signature Details-->
+
+      <tr>
+        <td><input type="checkbox" value=""></td>  <th>
+         7 Photo Mismatch
+        </th>
+      </tr> 
+    
+      <tr>
+        <td><input type="checkbox" value=""></td>  <th>
+         8.Signature Mismatch
+        </th>
+      </tr> 
+  <tr>
+
+<!--Canditates Address Details-->
+    <td><input type="checkbox" value=""></td>  <th>
+  *9. Address for Communication &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  
+    Residential<input type="radio" name="address" value="Residential">&emsp;&emsp;&emsp;&emsp;
+    Office<input type="radio" name="address" value="Residential">
+  
+    </th>
+  </tr> 
+  
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+     Office Name    <input type="text" name="address" value="" class="address" required>   
+      <h5>(to be filled only in case of office address)</h5>
+    
+    </th>
+  </tr> 
+
+  <!--Candidates Local Address Details-->
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+    Flat/Door/Block No.  &emsp;
+     <input type="text" name="address" value="" class="address" required>
+    </th>
+  </tr> 
+</table>
+</div>
+
+
+<!--PROCEED BUTTON -->
+<center>
+   <div class="div-proceed-btn">
+     <button class="proceed-btn">Proceed</button>
+   </div>
+ </center>
+ <!--Proceed BUTTON-->  
+
+   <div class="div-container">
+   <table>
+     <!--Candidates Local Address-->
+   <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+  Name of Premises/Building/Village <input type="text" name="address"  class="address" value="" required>
+    </th>
+  </tr> 
+
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+Road/Street/Lane/Post Office <input type="text" name="address" value="" class="label" required>
+    </th>
+  </tr>  
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+Area/Locality/Taluka/Sub-Division<input type="text" name="address" value="" class="label" required>
+    </th>
+  </tr>    
+
+  <!--Candidates District, State and Country-->
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+  Town/City/District    <input type="text" name="address" value="" class="address" required>
+    </th>
+  </tr>
+  
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+State/Union Territory
+ <div>
+  <select class="option-menu">
+    <option>select State</option><option>Andra pradesh</option>
+    <option>Andra pradesh</option><option>Andra pradesh</option>
+    <option>select State</option> <option>Andra pradesh</option>
+    <option>select State</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    <option>Andra pradesh</option> <option>select State</option>
+    
+   </select>
+ </div>
+
+    </th>
+  </tr> 
+<!--Candidates Pincode Number-->
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+PIN(Indicating PIN is mandatoy) <input type="number" name="pincode" value="" class="address" required>   
+    </th>
+  </tr>
+
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+  Country 
+  <div >
+    <select class="option-menu">
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+      <option>Please Select</option> <option>Please Select</option> <option>Please Select</option>
+    </select>
+  </div>    
+    </th>
+  </tr>
+
+  <!--Candidates Zip and PinCode Number-->
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+      Zip <input type="number" name="zip" value="" class="label" required>
+    </th>
+  </tr>
+
+  <tr>
+    <td><input type="checkbox" value=""></td>  <th>
+10. If you desire to update your other address give required details & Submit proof of other address also.
+    </th>
+  </tr>
+</table>
+   </div>
+
+   <!--Candidates Uploaded Documents-->
+<center>
+   <div class="small-container">
+<h4><b>For Paperless PAN Application:</b></h4> 
+  <div class="div-YN">
+    &emsp;&emsp;&emsp;
+    Yes<input type="radio" name="paperless" value="Yes"> &emsp;&emsp;&emsp;&emsp;
+    No<input type="radio" name="paperless" value="Yes"> 
+  </div>
+
+<br>
+<div class="select-bottom">
+  <br>
+  <br>
+  <br>
+  <select>
+    <option> Please Select</option><option> Please Select</option><option> Please Select</option>
+
+  </select>
+</div>
+<br>
+<div>
+<h5>
+Upload Photo  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ <input type="file" name="choose file" value=""></h5>
+<h5>
+Upload Signature  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ <input type="file" name="choose file" value=""></h5>
+<h5>
+Upload document   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input type="file"  name="choose file" value="">
+</h5>
+  </div>
+      </div>
+    </center>
+    <center>
+      <div class="btn">
+                          
+        <input type="submit" value="SUBMIT" class="sub-btn" >
+         </div>               
+    </center>
+  </form>
+</div>
+
+</body>
+</html>
